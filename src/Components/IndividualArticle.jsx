@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getSingleArticle } from "../api";
+import AllComments from "./AllComments";
 
 function IndividualArticle() {
 const {article_id} = useParams()
@@ -22,6 +23,7 @@ const date = new Date(singleArticle.created_at).toLocaleString("en-US")
 return isLoading ? (
     <h1> Loading ....</h1>
     ) : (
+        <div>
     <div className="individual_article_card">
         <h1 className="title">{singleArticle.title}</h1>
         <h4 className="author">Written by: {singleArticle.author}</h4>
@@ -30,6 +32,8 @@ return isLoading ? (
         <p>{singleArticle.body}</p>
         <p>{date}</p>
         <h3>votes:{singleArticle.votes}</h3>
+    </div>
+    <AllComments/>
     </div>
 )
 }
