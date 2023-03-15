@@ -46,3 +46,45 @@ color: white;
 .author{
   text-align: right;
 }
+.comment_card {
+  color: rgb(141, 52, 224);
+  background-color: rgb(210, 240, 240);
+  list-style: none;
+  width: 40%;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  border-radius: 1ch;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  flex-grow: 1;
+  width: auto;
+  display: block;
+
+}
+.date_container {
+  background-color: rgb(185, 214, 228);
+  color: black;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  margin-right: 100px;
+  text-align: center;
+  border-radius: 1ch;
+  box-shadow: 0 2px 4px 0 rgba(50, 237, 68, 0.2);
+  flex-grow: 1;
+  width: 40%;
+  display: block;
+}
+.votes_container {
+  background-color: rgb(228, 157, 157);
+  color: black;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  border-radius: 1ch;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+  flex-grow: 1;
+  width: 20%;
+  display: block;
+}
