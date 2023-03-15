@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getSingleArticle } from "../api";
 import AllComments from "./AllComments";
+import VotingButton from "./VotingButton";
 
 function IndividualArticle() {
 const {article_id} = useParams()
@@ -31,7 +32,7 @@ return isLoading ? (
        <h3>This article is about {singleArticle.topic}</h3>
         <p>{singleArticle.body}</p>
         <p>{date}</p>
-        <h3>votes:{singleArticle.votes}</h3>
+        <VotingButton singleArticle = {singleArticle}/>
     </div>
     <AllComments/>
     </div>
