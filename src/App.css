@@ -47,8 +47,8 @@ color: white;
   text-align: right;
 }
 .comment_card {
-  color: rgb(141, 52, 224);
-  background-color: rgb(210, 240, 240);
+  color: rgb(255, 255, 255);
+  background-color: rgb(1, 189, 189);
   list-style: none;
   width: 40%;
   margin-bottom: 20px;
@@ -63,8 +63,8 @@ color: white;
 
 }
 .date_container {
-  background-color: rgb(185, 214, 228);
-  color: black;
+  background-color: rgb(42, 64, 231);
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
   margin-left: 150px;
   margin-right: 100px;
@@ -76,8 +76,8 @@ color: white;
   display: block;
 }
 .votes_container {
-  background-color: rgb(228, 157, 157);
-  color: black;
+  background-color: rgb(249, 67, 67);
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
   margin-left: 25px;
   margin-right: 25px;
