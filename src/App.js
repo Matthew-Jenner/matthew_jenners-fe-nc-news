@@ -6,11 +6,16 @@ import {Routes, Route} from "react-router-dom"
 import IndividualArticle from './Components/IndividualArticle';
 import AllComments from './Components/AllComments';
 import Users from './Components/Users';
+import { useContext } from 'react';
+import { UserContext } from './contexts/Users';
  
 function App() {
+  const {user} = useContext(UserContext)
+
   return (
     <div className="App">
        <Header/>
+       <p> logged in as: {user.username}</p>
       <NavigationBar/>
     <Routes>
       <Route path="/" element = {<AllArticles/>} />

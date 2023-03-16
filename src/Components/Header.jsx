@@ -5,7 +5,7 @@ return (
     <div>
     <h1 className="header">Matthews' News</h1>
     <Link to = {"/users"}>
-    <button>Log in</button>
+    <button>Change User here</button>
     </Link>
     </div>
 )
