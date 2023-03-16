@@ -39,3 +39,9 @@ export const patchReviewVotes = (article_id, vote) => {
        return data.body
     });
   }; 
+
+  export const getAllUsers = () => {
+    return newsApi.get(`/users`).then(({data}) => {
+        return data.users
+    })
+}
