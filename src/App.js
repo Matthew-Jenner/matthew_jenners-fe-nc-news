@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="App">
     <div className='Header_login'>
-       <Header/>
-       <p> logged in as: {user.username} </p>
-       <img className = "user_image" src={user.avatar_url} alt={`avatar of ${user.name}`}/>        
+       <p align='right'> logged in as: {user.username} </p>
+       <img align='right' className = "user_image_loggedin" src={user.avatar_url} alt={`avatar of ${user.name}`}/>        
        </div>
+       <Header/>
       <NavigationBar/>
     <Routes>
       <Route path="/" element = {<AllArticles/>} />
