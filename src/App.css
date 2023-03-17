@@ -126,3 +126,8 @@ color: white;
     border-radius: 50%;
   
 }
+.error-message{
+  color: black;
+ font-size: larger;
+ background-color: #fef354;
+}
