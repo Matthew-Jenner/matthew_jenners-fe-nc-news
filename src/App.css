@@ -131,3 +131,11 @@ color: white;
  font-size: larger;
  background-color: #fef354;
 }
+.nav_options{
+  word-spacing: 30px;
+  justify-content: space-around;
+  text-decoration: none
+  
+}
+.Header_login{
+  grid-row: 1;}

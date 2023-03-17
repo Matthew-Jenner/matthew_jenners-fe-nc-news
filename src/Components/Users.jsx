@@ -14,7 +14,7 @@ setIsLoading(false)
     })
 }, [])
 
-
+console.log(allUsers)
 return isLoading ? (
     <h1> Loading....</h1>
 ) : (

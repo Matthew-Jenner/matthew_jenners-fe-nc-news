@@ -14,15 +14,19 @@ function App() {
 
   return (
     <div className="App">
+    <div className='Header_login'>
        <Header/>
        <p> logged in as: {user.username} </p>
-       <img className = "user_image" src={user.avatar_url} alt={`avatar of ${user.name}`}/>            
+       <img className = "user_image" src={user.avatar_url} alt={`avatar of ${user.name}`}/>        
+       </div>
       <NavigationBar/>
     <Routes>
       <Route path="/" element = {<AllArticles/>} />
       <Route path="/users" element = {<Users/>} />
       <Route path="/articles/:article_id" element = {<IndividualArticle/>} />
       <Route path="/articles/:aritcle_id/comments" element = {<AllComments/>} />
+      <Route path='/topics/:topic' element={<AllArticles/>} />
+   
     </Routes>
     </div>
   );
