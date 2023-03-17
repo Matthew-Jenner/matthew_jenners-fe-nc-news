@@ -32,3 +32,19 @@ export const patchReviewVotes = (article_id, vote) => {
         return data.article
       });
   };
+
+  export const postCommentToArticle = (article_id, newComment, user) => {
+    return newsApi.post(`/articles/${article_id}/comments`, {
+        body: newComment,
+        username: user.username
+    }).then(({ data }) =>{
+        console.log(data.comment)
+       return data.comment
+    });
+  }; 
+
+  export const getAllUsers = () => {
+    return newsApi.get(`/users`).then(({data}) => {
+        return data.users
+    })
+}
