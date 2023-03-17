@@ -4,8 +4,14 @@ const newsApi = axios.create({
     baseURL: "https://matthew-j-hosting.onrender.com/api"
 })
 
-export const getAllArticles = () => {
-    return newsApi.get("/articles").then(({data}) => {
+export const getAllArticles = (topic, sort_by, order) => {
+    return newsApi.get("/articles", {
+        params: {
+            topic:topic,
+            sort_by,
+            order
+        }
+    }).then(({data}) => {
         return data.articles
     })
     .catch((error) => {
@@ -46,5 +52,11 @@ export const patchReviewVotes = (article_id, vote) => {
   export const getAllUsers = () => {
     return newsApi.get(`/users`).then(({data}) => {
         return data.users
+    })
+}
+
+export const getAllTopics = (topic) => {
+    return newsApi.get('/topics').then(({data}) => {
+        return data.topics
     })
 }

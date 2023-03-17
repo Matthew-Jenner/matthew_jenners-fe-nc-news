@@ -6,6 +6,9 @@
   color: white;
   background-color: black;
   font-size: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between
 }
 
 .article_card {
@@ -130,4 +133,28 @@ color: white;
   color: black;
  font-size: larger;
  background-color: #fef354;
+}
+.nav_options{
+  word-spacing: 30px;
+  justify-content: space-around;
+  text-decoration: none
+  
+}
+.Header_login{
+  align-items: right;
+  background-color: ;
+}
+
+.user_image_loggedin{
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+  border-radius: 50%;
+  border: black;
+  border-style: solid;
+  
+
+}
+.change_user_button{
+  color: blueviolet;
 }
