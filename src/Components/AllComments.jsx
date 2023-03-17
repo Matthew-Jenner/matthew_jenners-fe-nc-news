@@ -16,6 +16,7 @@ const {article_id} = useParams()
             setIsLoading(false)
         })
     }, [article_id])
+    
     return isLoading ? (
         <h1> Loading ....</h1>
     ) : (
@@ -23,7 +24,7 @@ const {article_id} = useParams()
             <section>
             <PostComment setAllComments={setAllComments} article_id={article_id}/>
                 <h2> Here are the comments about this article! </h2>
-                {allComments.map((comment) => {
+                {allComments && allComments.map((comment) => {
                     return <CommentCard key = {comment.comment_id} comment = {comment} />
                 })}
             </section>

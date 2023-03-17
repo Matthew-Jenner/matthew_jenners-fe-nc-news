@@ -22,8 +22,8 @@ return isLoading ? (
     <div>
     <section>
     <h2> Here are all of the users:</h2>
-     {allUsers.map((users) => {
-            return  <UserCard key = {users.username} users={users} />
+     {allUsers.map((user) => {
+            return  <UserCard key = {user.username} user={user} />
         })}
         </section>
     </div>

@@ -4,7 +4,7 @@ import ArticleCard from "./ArticleCard"
 
 function AllArticles(){
 const [allArticles, setAllArticles] = useState([])
-const[isLoading, setIsLoading] = useState([true])
+const[isLoading, setIsLoading] = useState(true)
 
 useEffect(() => {
     setIsLoading(true)

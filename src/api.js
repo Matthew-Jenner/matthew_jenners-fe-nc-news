@@ -33,10 +33,13 @@ export const patchReviewVotes = (article_id, vote) => {
       });
   };
 
-  export const postCommentToArticle = (article_id, newComment) => {
-    return newsApi.post(`/articles/${article_id}/comments`, {text: newComment
+  export const postCommentToArticle = (article_id, newComment, user) => {
+    return newsApi.post(`/articles/${article_id}/comments`, {
+        body: newComment,
+        username: user.username
     }).then(({ data }) =>{
-       return data.body
+        console.log(data.comment)
+       return data.comment
     });
   }; 
 
