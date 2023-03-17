@@ -15,7 +15,8 @@ function App() {
   return (
     <div className="App">
        <Header/>
-       <p> logged in as: {user.username}</p>
+       <p> logged in as: {user.username} </p>
+       <img className = "user_image" src={user.avatar_url} alt={`avatar of ${user.name}`}/>            
       <NavigationBar/>
     <Routes>
       <Route path="/" element = {<AllArticles/>} />

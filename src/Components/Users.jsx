@@ -21,7 +21,7 @@ return isLoading ? (
 
     <div>
     <section>
-    <h2> Here are all of the users:</h2>
+    <h2> Select your avatar:</h2>
      {allUsers.map((user) => {
             return  <UserCard key = {user.username} user={user} />
         })}

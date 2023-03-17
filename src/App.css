@@ -88,3 +88,41 @@ color: white;
   width: 20%;
   display: block;
 }
+
+.add-comment{
+  color: rgb(228, 250, 114);
+  background-color: rgb(181, 247, 247);
+  width: 40%;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  border-radius: 1ch;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  flex-grow: 1;
+  width: auto;
+  display: block;
+}
+
+.add-comment textarea{
+  margin: 10px;
+  padding: 5px 5px;
+  width: 80%;  
+  height: 90%;
+
+}
+.add-comment button {
+  border-radius: 8px;
+}
+.add-comment button:hover {
+  background-color: #fef354; /* Green */
+  color: white;
+}
+.user_image{
+
+    width: 75px;
+    height: 75px;
+    object-fit: fill;
+    border-radius: 50%;
+  
+}

@@ -24,7 +24,7 @@ const {article_id} = useParams()
             <section>
             <PostComment setAllComments={setAllComments} article_id={article_id}/>
                 <h2> Here are the comments about this article! </h2>
-                {allComments && allComments.map((comment) => {
+                {allComments.map((comment) => {
                     return <CommentCard key = {comment.comment_id} comment = {comment} />
                 })}
             </section>
