@@ -12,7 +12,7 @@ function AllArticles() {
   const [searchParams, setSearchParams] = useSearchParams();
   const { topic } = useParams();
 
-  const sortByQuery = searchParams.get("sort_by");
+  // const sortByQuery = searchParams.get("sort_by");
 
   useEffect(() => {
     setIsLoading(true);
